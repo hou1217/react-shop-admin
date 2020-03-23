@@ -2,6 +2,8 @@ import Login from '@/views/login/Login'
 import Index from '@/views/admin/dashboard/Index'
 import List from '@/views/admin/products/List'
 import Edit from '@/views/admin/products/Edit'
+import Test1 from '@/views/admin/products/Test1'
+import Test2 from '@/views/admin/products/Test2'
 import PageNotFound from '@/views/error/404'
 
 export const mainRoutes = [
@@ -27,6 +29,20 @@ export const adminRoutes = [
     component:List,
     exact:true,
     title:'商品列表',
+    icon:'shop',
+  },
+  {
+    path:"/admin/products/test1",
+    component:Test1,
+    exact:true,
+    title:'测试一',
+    icon:'shop',
+  },
+  {
+    path:"/admin/products/test2",
+    component:Test2,
+    exact:true,
+    title:'测试二',
     icon:'shop',
   },
   {
