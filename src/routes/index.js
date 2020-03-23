@@ -1,10 +1,15 @@
+import React from 'react'
+
 import Login from '@/views/login/Login'
 import Index from '@/views/admin/dashboard/Index'
 import List from '@/views/admin/products/List'
 import Edit from '@/views/admin/products/Edit'
-import Test1 from '@/views/admin/products/Test1'
-import Test2 from '@/views/admin/products/Test2'
 import PageNotFound from '@/views/error/404'
+
+const Test1 = React.lazy(()=> import('@/views/admin/products/Test1'))
+const Test2 = React.lazy(()=> import('@/views/admin/products/Test2'))
+
+// import Test2 from '@/views/admin/products/Test2'
 
 export const mainRoutes = [
   {

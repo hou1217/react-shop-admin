@@ -14,6 +14,7 @@ function App() {
   
   return (isLogin()?
     <Frame>
+      <React.Suspense fallback={<div>Loading...</div>}>
       <Switch>
         {adminRoutes.map(route=>{
          
@@ -33,6 +34,7 @@ function App() {
         <Redirect to="/404"></Redirect>
 
       </Switch>
+      </React.Suspense>
     </Frame>: <Redirect to="/login"></Redirect>
   );
 }
